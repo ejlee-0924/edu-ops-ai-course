@@ -52,7 +52,7 @@ cd edu-ops-ai-course/practice
 1. ChatGPT/Gemini와 Claude Code/Codex의 차이
 2. 언제 Claude Code, 언제 Codex를 쓰는지
 3. AI 업무 매뉴얼 만들기: `CLAUDE.md`, `AGENTS.md`
-4. MCP 이해하기: AI가 내 업무 자료를 찾는 통로
+4. 자료 연결 이해하기(MCP): AI가 내 업무 자료를 찾는 통로
 5. Clarify로 모호한 업무 요청 정리하기
 6. Lab 1: 만족도 조사 정성 의견 리포팅
 7. Lab 2: 싱크업/메일 히스토리 기반 기업별 할 일 정리
