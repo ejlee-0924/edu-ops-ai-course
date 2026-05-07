@@ -1,3 +1,5 @@
 .DS_Store
 practice/private-data/*
 !practice/private-data/README.md
+practice/outputs/*
+!practice/outputs/README.md
