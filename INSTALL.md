@@ -22,6 +22,25 @@ Claude Code와 Codex 모두 사용할 수 있습니다.
 - Codex는 `AGENTS.md`를 읽고 진행합니다.
 - 두 파일 모두 같은 교육 운영 업무 매뉴얼을 불러오도록 되어 있습니다.
 
+## Windows에서 Claude Code 설치
+
+Claude Code가 설치되어 있지 않은 수강생은 Windows PowerShell에서 아래 명령을 순서대로 실행합니다.
+
+```powershell
+winget install --id OpenJS.NodeJS.LTS -e --source winget
+winget install --id Git.Git -e --source winget
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+npm install -g @anthropic-ai/claude-code
+```
+
+설치 확인:
+
+```powershell
+claude --version
+```
+
+버전이 보이지 않으면 PowerShell을 새로 열고 다시 확인합니다.
+
 ## ZIP 다운로드 방식
 
 회사 보안 정책이나 네트워크 제한 때문에 AI가 GitHub 링크를 직접 열지 못할 수 있습니다. 그럴 때는 아래 방식으로 진행합니다.

@@ -38,6 +38,15 @@ AI가 GitHub 링크를 직접 열거나 설치할 수 없는 환경이면, GitHu
 
 Claude Code는 루트의 `CLAUDE.md`를 읽고, Codex는 루트의 `AGENTS.md`를 읽도록 구성했습니다. 두 파일 모두 `practice` 폴더의 업무 매뉴얼을 불러오므로 어느 도구에서 시작해도 같은 실습 흐름으로 진행됩니다.
 
+Windows에서 Claude Code 설치가 필요한 수강생은 PowerShell에서 아래 명령을 실행합니다.
+
+```powershell
+winget install --id OpenJS.NodeJS.LTS -e --source winget
+winget install --id Git.Git -e --source winget
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+npm install -g @anthropic-ai/claude-code
+```
+
 터미널을 사용할 수 있는 수강생은 아래처럼 받을 수 있습니다.
 
 ```bash

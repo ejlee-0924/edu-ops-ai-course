@@ -16,6 +16,7 @@
 
 | 지점 | 대응 |
 |---|---|
+| Claude Code가 설치되지 않은 경우 | Windows PowerShell 설치 명령을 먼저 실행하고 새 PowerShell 창에서 `claude --version` 확인 |
 | GitHub 링크를 AI가 못 여는 경우 | ZIP 다운로드 방식으로 안내 |
 | Google Sheets MCP 연결이 안 되는 경우 | 샘플 워크북의 백업 파일 또는 export 파일로 진행 |
 | OAuth 값이 노출될 수 있는 경우 | 화면 공유나 비공개 채널로만 전달하고 공개 저장소에는 placeholder 사용 |

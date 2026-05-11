@@ -4,6 +4,34 @@
 
 [https://edu-ops-ai-course-vercel.vercel.app](https://edu-ops-ai-course-vercel.vercel.app)
 
+## Windows에서 Claude Code 설치하기
+
+아직 Claude Code가 설치되어 있지 않은 수강생은 Windows PowerShell을 열고 아래 명령을 순서대로 실행합니다.
+
+```powershell
+winget install --id OpenJS.NodeJS.LTS -e --source winget
+winget install --id Git.Git -e --source winget
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+npm install -g @anthropic-ai/claude-code
+```
+
+각 명령의 의미는 간단합니다.
+
+| 명령 | 의미 |
+|---|---|
+| `winget install --id OpenJS.NodeJS.LTS -e --source winget` | Claude Code를 설치하기 위한 Node.js를 설치합니다. |
+| `winget install --id Git.Git -e --source winget` | GitHub 실습 자료를 받을 수 있게 Git을 설치합니다. |
+| `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` | 현재 사용자 계정에서 필요한 실행 권한을 허용합니다. |
+| `npm install -g @anthropic-ai/claude-code` | Claude Code를 설치합니다. |
+
+설치 후 새 PowerShell 창을 열고 아래 명령으로 확인합니다.
+
+```powershell
+claude --version
+```
+
+버전이 보이면 Claude Code 설치가 끝난 것입니다.
+
 가장 쉬운 방법은 Claude Code 또는 Codex에 GitHub 링크를 주는 것입니다.
 
 ```text
