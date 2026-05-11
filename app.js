@@ -19,6 +19,134 @@
     })[char]);
   }
 
+  function renderInline(text) {
+    const codeSpans = [];
+    let value = String(text).replace(/`([^`]+)`/g, (_, code) => {
+      const token = `\u0000CODE${codeSpans.length}\u0000`;
+      codeSpans.push(`<code>${escapeHtml(code)}</code>`);
+      return token;
+    });
+
+    value = escapeHtml(value)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => {
+        return `<a href="${escapeHtml(url)}">${label}</a>`;
+      })
+      .replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+
+    return value.replace(/\u0000CODE(\d+)\u0000/g, (_, index) => codeSpans[Number(index)]);
+  }
+
+  function isTableLine(line) {
+    return /^\s*\|.*\|\s*$/.test(line);
+  }
+
+  function isSpecialLine(line) {
+    return /^(#{1,4})\s+/.test(line)
+      || /^```/.test(line)
+      || /^[-*]\s+/.test(line)
+      || /^\d+\.\s+/.test(line)
+      || /^>\s?/.test(line)
+      || isTableLine(line);
+  }
+
+  function renderTable(lines) {
+    const rows = lines
+      .filter((line) => !/^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?\s*$/.test(line))
+      .map((line) => line.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map((cell) => cell.trim()));
+
+    if (!rows.length) return "";
+    const [head, ...body] = rows;
+    const header = `<thead><tr>${head.map((cell) => `<th>${renderInline(cell)}</th>`).join("")}</tr></thead>`;
+    const bodyRows = body.map((row) => `<tr>${row.map((cell) => `<td>${renderInline(cell)}</td>`).join("")}</tr>`).join("");
+    return `<table>${header}<tbody>${bodyRows}</tbody></table>`;
+  }
+
+  function renderMarkdown(markdown) {
+    const lines = markdown.replace(/\r\n/g, "\n").split("\n");
+    const html = [];
+    let index = 0;
+
+    while (index < lines.length) {
+      const line = lines[index];
+
+      if (!line.trim()) {
+        index += 1;
+        continue;
+      }
+
+      const fence = line.match(/^```(\w+)?/);
+      if (fence) {
+        const lang = fence[1] ? ` class="language-${escapeHtml(fence[1])}"` : "";
+        const code = [];
+        index += 1;
+        while (index < lines.length && !/^```/.test(lines[index])) {
+          code.push(lines[index]);
+          index += 1;
+        }
+        if (index < lines.length) index += 1;
+        html.push(`<pre><code${lang}>${escapeHtml(code.join("\n"))}</code></pre>`);
+        continue;
+      }
+
+      const heading = line.match(/^(#{1,4})\s+(.+)$/);
+      if (heading) {
+        const level = heading[1].length;
+        html.push(`<h${level}>${renderInline(heading[2])}</h${level}>`);
+        index += 1;
+        continue;
+      }
+
+      if (/^[-*]\s+/.test(line)) {
+        const items = [];
+        while (index < lines.length && /^[-*]\s+/.test(lines[index])) {
+          items.push(`<li>${renderInline(lines[index].replace(/^[-*]\s+/, ""))}</li>`);
+          index += 1;
+        }
+        html.push(`<ul>${items.join("")}</ul>`);
+        continue;
+      }
+
+      if (/^\d+\.\s+/.test(line)) {
+        const items = [];
+        while (index < lines.length && /^\d+\.\s+/.test(lines[index])) {
+          items.push(`<li>${renderInline(lines[index].replace(/^\d+\.\s+/, ""))}</li>`);
+          index += 1;
+        }
+        html.push(`<ol>${items.join("")}</ol>`);
+        continue;
+      }
+
+      if (/^>\s?/.test(line)) {
+        const quote = [];
+        while (index < lines.length && /^>\s?/.test(lines[index])) {
+          quote.push(lines[index].replace(/^>\s?/, ""));
+          index += 1;
+        }
+        html.push(`<blockquote><p>${renderInline(quote.join(" "))}</p></blockquote>`);
+        continue;
+      }
+
+      if (isTableLine(line)) {
+        const table = [];
+        while (index < lines.length && isTableLine(lines[index])) {
+          table.push(lines[index]);
+          index += 1;
+        }
+        html.push(renderTable(table));
+        continue;
+      }
+
+      const paragraph = [];
+      while (index < lines.length && lines[index].trim() && !isSpecialLine(lines[index])) {
+        paragraph.push(lines[index].trim());
+        index += 1;
+      }
+      html.push(`<p>${renderInline(paragraph.join(" "))}</p>`);
+    }
+
+    return html.join("\n");
+  }
+
   function slugify(text, fallback) {
     const slug = text
       .trim()
@@ -189,7 +317,7 @@
       const response = await fetch(`content/${actualId}.md`, { cache: "no-cache" });
       if (!response.ok) throw new Error(`content/${actualId}.md`);
       const markdown = await response.text();
-      main.innerHTML = marked.parse(markdown);
+      main.innerHTML = renderMarkdown(markdown);
 
       main.querySelectorAll("a").forEach((link) => {
         const href = link.getAttribute("href") || "";
