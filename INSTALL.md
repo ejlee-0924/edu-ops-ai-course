@@ -55,7 +55,8 @@ python3 -m http.server 18790
 
 ## 수강생 실데이터 안내
 
-실제 업무 자료는 `practice/private-data/`에 넣습니다.
+실제 업무 자료는 가능하면 Google Sheets MCP로 연결합니다.
+연결이 어렵거나 사전 익명화가 필요하면 `practice/private-data/`에 export 파일을 넣습니다.
 
 주의:
 

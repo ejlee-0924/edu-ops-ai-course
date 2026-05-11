@@ -7,7 +7,7 @@
 |---|---|
 | `CLAUDE.md` | Claude Code에게 주는 업무 매뉴얼 |
 | `AGENTS.md` | Codex에게 주는 업무 매뉴얼 |
-| MCP | AI가 Slack, Drive, Gmail, Notion 같은 자료실로 가는 연결 통로 |
+| MCP | AI가 Google Sheets, Slack, Drive, Gmail, Notion 같은 자료실로 가는 연결 통로 |
 | Clarify | AI에게 맡길 일을 정확히 적는 의뢰서 만들기 |
 | Skill | 잘 된 업무 요청을 저장한 반복 업무 레시피 |
 | GitHub | 실습 자료를 받는 공유 폴더 |

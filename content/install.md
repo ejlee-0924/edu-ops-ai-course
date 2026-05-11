@@ -2,7 +2,7 @@
 
 학습 웹사이트는 아래 주소로 바로 열 수 있습니다.
 
-https://edu-ops-ai-course-vercel.vercel.app
+[https://edu-ops-ai-course-vercel.vercel.app](https://edu-ops-ai-course-vercel.vercel.app)
 
 가장 쉬운 방법은 Claude Code 또는 Codex에 GitHub 링크를 주는 것입니다.
 
@@ -31,3 +31,10 @@ https://github.com/ejlee-0924/edu-ops-ai-course
 - Claude Code는 `CLAUDE.md`를 읽고 진행합니다.
 - Codex는 `AGENTS.md`를 읽고 진행합니다.
 - 두 파일은 같은 교육 운영 업무 매뉴얼을 불러옵니다.
+
+## Google Sheets MCP 준비
+
+이 교육의 자료 연결 실습은 Google Sheets MCP를 기본으로 진행합니다.
+
+수업에서는 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 연 뒤, Google Sheets MCP에서 해당 시트를 찾게 합니다.
+회사 보안이나 계정 문제로 연결이 어려운 경우에만 `practice/sample-data/`의 CSV/Markdown 백업 파일을 사용합니다.

@@ -33,7 +33,7 @@
 "만족도 리포트 정리해줘"
 
 나는 비개발 교육 운영자이고, 결과물은 실제 업무 검토용 초안으로 쓸 거야.
-자료는 practice/sample-data/satisfaction-comments.csv를 사용할 거야.
+자료는 Google Sheets MCP로 연결된 Edu Ops AI Course Sample 문서의 satisfaction_comments 탭을 사용할 거야.
 
 아래 항목을 반드시 포함한 업무 실행 의뢰서로 만들어줘:
 - 목표

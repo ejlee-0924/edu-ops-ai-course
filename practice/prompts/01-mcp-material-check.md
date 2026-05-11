@@ -1,4 +1,4 @@
-# 01. MCP/자료 연결 확인 요청
+# 01. Google Sheets MCP 자료 연결 확인 요청
 
 아래 요청문을 Claude Code 또는 Codex에 붙여넣으세요.
 
@@ -7,8 +7,15 @@
 
 먼저 이 작업에 필요한 자료가 어디에 있는지 같이 확인해줘.
 
-가능하면 연결된 도구나 MCP 리소스에서 확인하고,
-연결이 어렵다면 practice/sample-data 또는 practice/private-data 폴더의 파일을 기준으로 진행해줘.
+가능하면 Google Sheets MCP에서 먼저 확인하고,
+연결이 어렵다면 practice/sample-data 또는 practice/private-data 폴더의 백업 파일을 기준으로 진행해줘.
+
+Google Sheets MCP에서 먼저 찾을 자료:
+- 문서명: Edu Ops AI Course Sample
+- 탭: satisfaction_comments
+- 탭: syncup_notes
+- 탭: client_email_thread
+- 탭: cs_inquiries
 
 확인할 자료:
 - 만족도 조사 정성 의견
@@ -22,4 +29,3 @@
 3. 민감정보 주의가 필요한 자료
 4. 다음 단계에서 Clarify로 정리해야 할 업무 요청
 ```
-

@@ -10,7 +10,7 @@
 
 - 공개 학습 웹사이트: https://edu-ops-ai-course-vercel.vercel.app
 - 루트 웹사이트: `index.html`에서 시작하는 학습 가이드북
-- 실습 패키지: `practice/` 안의 샘플 데이터, 프롬프트, 템플릿
+- 실습 패키지: `practice/` 안의 샘플 Google Sheet, 프롬프트, 템플릿
 
 웹사이트는 `시작하기 → 이해하기 → 설계하기 → 만들기 → 마무리` 흐름으로 구성되어 있습니다. 수강생은 웹사이트에서 학습 흐름을 보고, Claude Code 또는 Codex에서는 `practice/` 실습 파일을 실행합니다.
 
@@ -58,7 +58,7 @@ python3 -m http.server 18790
 - `index.html`: 웹 가이드북 첫 화면
 - `content/`: 웹 가이드북 본문 Markdown
 - `practice/README.md`: 수강생 실습 안내서
-- `practice/sample-data/`: 가상 만족도 조사, 싱크업 문서, 고객 메일, CS 문의 샘플
+- `practice/sample-data/`: Google Sheets MCP 실습용 샘플 워크북과 백업 파일
 - `practice/private-data/`: 수강생 개인 자료를 넣는 폴더
 - `practice/prompts/`: Claude Code/Codex에 붙여넣을 요청문
 - `practice/templates/`: 결과물 양식
@@ -69,7 +69,7 @@ python3 -m http.server 18790
 1. ChatGPT/Gemini와 Claude Code/Codex의 차이
 2. 언제 Claude Code, 언제 Codex를 쓰는지
 3. AI 업무 매뉴얼 만들기: `CLAUDE.md`, `AGENTS.md`
-4. 자료 연결 이해하기(MCP): AI가 내 업무 자료를 찾는 통로
+4. Google Sheets 자료 연결(MCP): Google Sheets MCP로 업무 자료를 연결하는 통로
 5. Clarify로 모호한 업무 요청 정리하기
 6. Lab 1: 만족도 조사 정성 의견 리포팅
 7. Lab 2: 싱크업/메일 히스토리 기반 기업별 할 일 정리
@@ -77,7 +77,8 @@ python3 -m http.server 18790
 
 ## 수강생 데이터 원칙
 
-실제 업무 자료는 `practice/private-data/`에만 넣습니다. 이 폴더는 공유 저장소에 올리지 않는 전제입니다.
+실제 업무 자료는 가능하면 Google Sheets MCP로 연결합니다.
+연결이 어렵거나 익명화가 필요한 export 파일은 `practice/private-data/`에만 넣습니다. 이 폴더는 공유 저장소에 올리지 않는 전제입니다.
 
 민감정보가 들어간 자료를 사용할 때는 다음을 지킵니다.
 
