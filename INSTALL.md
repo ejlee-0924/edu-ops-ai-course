@@ -63,3 +63,19 @@ python3 -m http.server 18790
 - 수강생 실명, 이메일, 전화번호는 가능하면 지웁니다.
 - 고객사 민감정보는 익명화합니다.
 - 고객에게 보낼 메일은 반드시 사람이 검토한 뒤 발송합니다.
+
+## Claude Code Google Workspace MCP 설치
+
+Google Sheets 실습은 Claude Code에서 `workspace-mcp`를 설치해 진행합니다.
+강사는 Google OAuth Client ID와 Client Secret을 비공개로 제공합니다.
+이 값은 GitHub/Vercel 공개 자료에 그대로 올리지 않습니다.
+
+```bash
+claude mcp add workspace-mcp --scope user \
+  -e GOOGLE_OAUTH_CLIENT_ID="[강사가 제공한 Google OAuth Client ID]" \
+  -e GOOGLE_OAUTH_CLIENT_SECRET="[강사가 제공한 Google OAuth Client Secret]" \
+  -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
+```
+
+설치 후 Google 계정 승인 화면이 뜨면 수업용 계정으로 승인합니다.
+그 다음 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 열어 실습합니다.

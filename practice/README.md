@@ -39,6 +39,18 @@
 
 MCP는 AI가 자료를 찾으러 가는 길입니다. 수강생에게는 먼저 "Google Sheets 자료 연결"이라고 설명하고, MCP는 그 연결 방식의 이름이라고 덧붙입니다.
 
+Claude Code에서는 아래 방식으로 `workspace-mcp`를 설치합니다.
+
+```bash
+claude mcp add workspace-mcp --scope user \
+  -e GOOGLE_OAUTH_CLIENT_ID="[강사가 제공한 Google OAuth Client ID]" \
+  -e GOOGLE_OAUTH_CLIENT_SECRET="[강사가 제공한 Google OAuth Client Secret]" \
+  -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
+```
+
+Google OAuth Client ID와 Client Secret은 공개 저장소에 넣지 않습니다.
+강사는 수업용 비공개 채널이나 화면 공유로 값을 제공합니다.
+
 Google Sheets MCP 연결이 가능하면 `Edu Ops AI Course Sample` 문서의 탭을 사용합니다. 연결이 어렵다면 Google Sheets에서 export한 파일이나 `sample-data/`의 백업 파일을 사용합니다.
 
 `prompts/01-mcp-material-check.md`를 사용합니다.

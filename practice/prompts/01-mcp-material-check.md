@@ -10,6 +10,10 @@
 가능하면 Google Sheets MCP에서 먼저 확인하고,
 연결이 어렵다면 practice/sample-data 또는 practice/private-data 폴더의 백업 파일을 기준으로 진행해줘.
 
+Google Sheets MCP는 Claude Code에 workspace-mcp로 설치하는 것을 기준으로 해.
+설치 명령은 claude mcp add workspace-mcp --scope user 방식이고,
+사용 도구는 sheets, forms, docs, slides, appscript, gmail, drive야.
+
 Google Sheets MCP에서 먼저 찾을 자료:
 - 문서명: Edu Ops AI Course Sample
 - 탭: satisfaction_comments
