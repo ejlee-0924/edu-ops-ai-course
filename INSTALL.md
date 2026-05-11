@@ -7,7 +7,7 @@
 수강생은 Claude Code 또는 Codex에 아래 문장을 붙여넣습니다.
 
 ```text
-이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 교육 운영자 실습을 3번 AI 업무 매뉴얼 만들기부터 순서대로 진행해줘:
+이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 설계하기 > AI 업무 매뉴얼 만들기부터 순서대로 진행해줘:
 
 [GitHub 링크]
 ```
@@ -30,20 +30,23 @@ Claude Code와 Codex 모두 사용할 수 있습니다.
 6. 아래 문장을 입력합니다.
 
 ```text
-이 폴더의 README를 읽고, 교육 운영자 실습을 3번 AI 업무 매뉴얼 만들기부터 순서대로 진행해줘.
+이 폴더의 README를 읽고, 설계하기 > AI 업무 매뉴얼 만들기부터 순서대로 진행해줘.
 ```
 
 ## 터미널 사용 가능자용
 
 ```bash
 git clone [GitHub 링크]
-cd edu-ops-ai-course/practice
+cd edu-ops-ai-course
+python3 -m http.server 18790
 ```
+
+브라우저에서 `http://127.0.0.1:18790`을 열면 학습 웹사이트를 볼 수 있습니다. 포트가 이미 사용 중이면 `18791`처럼 비어 있는 번호로 바꿔 실행하면 됩니다.
 
 그다음 Claude Code 또는 Codex에서 다음을 입력합니다.
 
 ```text
-이 practice 폴더의 README를 읽고, 3번 AI 업무 매뉴얼 만들기부터 실습을 진행해줘.
+이 저장소의 README.md와 practice/START_HERE.md를 읽고, 설계하기 > AI 업무 매뉴얼 만들기부터 실습을 진행해줘.
 ```
 
 ## 수강생 실데이터 안내

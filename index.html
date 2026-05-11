@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI 운영 시스템 만들기</title>
+  <script>
+    if (localStorage.getItem("edu_ops_sidebar_collapsed") === "1") {
+      document.documentElement.classList.add("sidebar-collapsed");
+    }
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <button class="sidebar-toggle" id="sidebar-toggle" type="button" aria-label="목차 접기/펴기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a class="brand" href="#">
+        <span class="brand-mark" id="brand-mark">E</span>
+        <span id="site-title">AI 운영 시스템 만들기</span>
+      </a>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" id="sidebar"></aside>
+    <main class="main">
+      <nav class="breadcrumb" id="breadcrumb" aria-label="breadcrumb"></nav>
+      <article id="main-content"></article>
+      <footer class="site-footer">
+        교육 운영자를 위한 Claude Code/Codex 실습 가이드
+      </footer>
+    </main>
+    <aside class="toc" id="toc-wrap">
+      <div class="toc-sticky">
+        <div class="toc-title">ON THIS PAGE</div>
+        <ul class="toc-list" id="toc-list"></ul>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
