@@ -1,5 +1,9 @@
 # 설치하고 시작하기
 
+학습 웹사이트는 아래 주소로 바로 열 수 있습니다.
+
+https://edu-ops-ai-course-vercel.vercel.app
+
 가장 쉬운 방법은 Claude Code 또는 Codex에 GitHub 링크를 주는 것입니다.
 
 ```text

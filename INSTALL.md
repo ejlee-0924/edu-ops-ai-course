@@ -4,6 +4,10 @@
 
 ## 가장 쉬운 진행 방식
 
+학습 웹사이트는 아래 주소로 공유합니다.
+
+https://edu-ops-ai-course-vercel.vercel.app
+
 수강생은 Claude Code 또는 Codex에 아래 문장을 붙여넣습니다.
 
 ```text

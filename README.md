@@ -8,6 +8,7 @@
 
 이 저장소는 두 층으로 구성되어 있습니다.
 
+- 공개 학습 웹사이트: https://edu-ops-ai-course-vercel.vercel.app
 - 루트 웹사이트: `index.html`에서 시작하는 학습 가이드북
 - 실습 패키지: `practice/` 안의 샘플 데이터, 프롬프트, 템플릿
 
