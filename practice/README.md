@@ -42,12 +42,12 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 ```
 
 그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
-Codex에서 설치가 바로 보이지 않아도 `prompts/02-clarify-request.md`로 같은 Ask Your Question 흐름을 진행할 수 있습니다.
+Codex에서 설치가 바로 보이지 않아도 `prompts/02-clarify-request.md`로 같은 Clarify 질문 흐름을 진행할 수 있습니다.
 
 ### 1. Clarify로 내 업무 구조화하기
 
 `prompts/02-clarify-request.md`를 사용해 수강생의 실제 반복 업무를 고릅니다.
-AI는 Ask Your Question 방식으로 질문을 하나씩 던지고, 수강생은 자기 업무 기준으로 답합니다.
+AI는 Clarify로 필요한 질문을 하나씩 던지고, 수강생은 자기 업무 기준으로 답합니다.
 
 결과물은 다음을 포함합니다.
 

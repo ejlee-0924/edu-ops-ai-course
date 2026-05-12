@@ -89,7 +89,7 @@ python3 -m http.server 18790
 1. ChatGPT/Gemini와 Claude Code/Codex의 차이
 2. 언제 Claude Code, 언제 Codex를 쓰는지
 3. Clarify 설치 또는 사용 가능 여부 확인하기
-4. Clarify로 내 업무 구조화하기: Ask Your Question 방식으로 업무와 Skill 초안 만들기
+4. Clarify로 내 업무 구조화하기: 질문을 받으며 업무와 Skill 초안 만들기
 5. 업무 자료 연결(MCP): 내 업무 자료를 AI가 볼 수 있게 연결하기
 6. 첫 결과물 만들기
 7. 나만의 업무 레시피 보강하기

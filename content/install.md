@@ -58,7 +58,7 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 
 그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
 현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
-이 경우에도 실습은 멈추지 않습니다. `practice/prompts/02-clarify-request.md`가 같은 Ask Your Question 흐름을 재현합니다.
+이 경우에도 실습은 멈추지 않습니다. `practice/prompts/02-clarify-request.md`가 같은 Clarify 질문 흐름을 재현합니다.
 
 ## 다음 단계
 

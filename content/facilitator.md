@@ -7,7 +7,7 @@
 
 1. 처음에는 반드시 수강생의 실제 반복 업무를 하나 고르게 합니다.
 2. Clarify 설치 또는 사용 가능 여부를 먼저 확인합니다.
-3. Clarify는 Ask Your Question 방식으로 질문을 하나씩 하게 합니다.
+3. Clarify는 필요한 질문을 하나씩 하게 합니다.
 4. MCP는 “AI가 업무 자료를 찾으러 가는 연결 통로”라고 먼저 설명합니다.
 5. Google OAuth Client ID와 Client Secret은 공개 자료에 남기지 않습니다.
 6. Clarify 완성형 예시는 자료가 없는 수강생에게만 백업으로 제공합니다.
