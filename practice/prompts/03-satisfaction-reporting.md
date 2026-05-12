@@ -1,11 +1,8 @@
 # 03. 만족도 조사 정성 의견 리포팅
 
 ```text
-Google Sheets MCP로 연결된 내 실제 만족도 조사 Google Sheet를 읽고,
+Google Sheets MCP로 연결된 내 실제 만족도 조사 Google Sheet를 기준으로,
 Clarify로 만든 업무 실행 의뢰서 기준에 맞춰 만족도 정성 의견 리포트를 만들어줘.
-
-내 실제 자료가 없으면 Edu Ops AI Course Sample 문서의 satisfaction_comments 탭으로 흐름을 확인해줘.
-Google Sheets MCP 연결이 어렵다면 practice/sample-data/satisfaction-comments.csv 또는 practice/private-data 안의 만족도 조사 export 파일을 사용해줘.
 
 분류 기준:
 - 콘텐츠/커리큘럼

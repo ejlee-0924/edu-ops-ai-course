@@ -16,9 +16,8 @@ https://edu-ops-ai-course-vercel.vercel.app
 
 Claude Code와 Codex 모두 사용할 수 있습니다.
 
-- Claude Code는 `CLAUDE.md`를 읽고 진행합니다.
-- Codex는 `AGENTS.md`를 읽고 진행합니다.
-- 두 파일 모두 같은 교육 운영 업무 매뉴얼을 불러오도록 되어 있습니다.
+- Claude Code와 Codex 모두 웹사이트의 프롬프트를 그대로 사용합니다.
+- 업무 기준은 수업 중 `AI 업무 매뉴얼 만들기`에서 정리합니다.
 
 ## Clarify 설치
 
@@ -46,7 +45,7 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 
 그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
 현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
-이 경우에는 `practice/prompts/02-clarify-request.md`로 같은 Clarify 질문 흐름을 진행합니다.
+이 경우에는 웹사이트의 Clarify 실행 프롬프트로 같은 질문 흐름을 진행합니다.
 Codex에서는 `Clarify로 해줘`만 입력하면 바로 정리문을 만들 수 있으므로, 실습 프롬프트처럼 질문형 대화로 진행해달라고 함께 적습니다.
 
 ## Windows에서 Claude Code 설치
@@ -68,44 +67,9 @@ claude --version
 
 버전이 보이지 않으면 PowerShell을 새로 열고 다시 확인합니다.
 
-## GitHub/ZIP 백업
-
-수강생은 보통 GitHub를 열 필요가 없습니다.
-샘플 파일, 템플릿, 오프라인 실습 패키지가 필요할 때만 아래 방식으로 진행합니다.
-
-1. GitHub 페이지를 엽니다.
-2. `Code` 버튼을 누릅니다.
-3. `Download ZIP`을 누릅니다.
-4. 압축을 풉니다.
-5. Claude Code 또는 Codex에서 압축을 푼 폴더를 엽니다.
-6. 아래 문장을 입력합니다.
-
-```text
-이 폴더의 README와 START_HERE.md를 읽고, 교육 페이지 흐름에 맞춰 내 반복 업무를 개인용 Skill로 만드는 실습을 진행해줘.
-먼저 Clarify 사용 가능 여부를 확인하고, 질문을 하나씩 해줘.
-```
-
-## 터미널 사용 가능자용
-
-```bash
-git clone [GitHub 링크]
-cd edu-ops-ai-course
-python3 -m http.server 18790
-```
-
-브라우저에서 `http://127.0.0.1:18790`을 열면 학습 웹사이트를 볼 수 있습니다. 포트가 이미 사용 중이면 `18791`처럼 비어 있는 번호로 바꿔 실행하면 됩니다.
-
-그다음 Claude Code 또는 Codex에서 다음을 입력합니다.
-
-```text
-이 저장소의 README.md와 practice/START_HERE.md를 읽고, 교육 페이지 흐름에 맞춰 내 반복 업무를 개인용 Skill로 만드는 실습을 진행해줘.
-먼저 Clarify 사용 가능 여부를 확인하고, 질문을 하나씩 해줘.
-```
-
 ## 수강생 실데이터 안내
 
 실제 업무 자료는 가능하면 MCP나 Connector로 연결합니다.
-연결이 어렵거나 사전 익명화가 필요하면 `practice/private-data/`에 export 파일을 넣습니다.
 
 주의:
 
@@ -118,7 +82,7 @@ python3 -m http.server 18790
 Google Sheets, Gmail, Drive, Docs 자료 연결은 웹사이트의 `시작하기 > MCP 설치하고 자료 연결하기`에서 진행합니다.
 Claude Code에서는 `workspace-mcp`를 설치합니다.
 강사는 Google OAuth Client ID와 Client Secret을 비공개로 제공합니다.
-이 값은 GitHub/Vercel 공개 자료에 그대로 올리지 않습니다.
+이 값은 공개 자료에 그대로 올리지 않습니다.
 
 ```bash
 claude mcp add workspace-mcp --scope user \

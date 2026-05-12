@@ -5,13 +5,11 @@
 
 | 용어 | 비개발자식 설명 |
 |---|---|
-| `CLAUDE.md` | Claude Code에게 주는 업무 매뉴얼 |
-| `AGENTS.md` | Codex에게 주는 업무 매뉴얼 |
+| Claude 업무 매뉴얼 | Claude Code에게 주는 업무 기준 |
+| Codex 업무 매뉴얼 | Codex에게 주는 업무 기준 |
 | MCP | AI가 Google Sheets, Slack, Drive, Gmail, Notion 같은 자료실로 가는 연결 통로 |
 | Clarify | AI에게 맡길 일을 정확히 적는 의뢰서 만들기 |
 | Skill | 잘 된 업무 요청을 저장한 반복 업무 레시피 |
-| GitHub | 강사용 원본과 백업 샘플 파일이 있는 자료실 |
-| repo | 실습 자료 폴더 |
 
 ## 기억할 문장
 

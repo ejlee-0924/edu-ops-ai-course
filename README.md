@@ -7,11 +7,10 @@
 ## 학습 웹사이트
 
 수강생은 공개 학습 웹사이트 하나만 열고 시작합니다.
-이 GitHub 저장소는 강사용 원본, 오프라인 백업, 샘플 파일 보관용입니다.
+이 저장소는 강사가 웹사이트 원본을 관리하기 위한 작업 공간입니다.
 
 - 공개 학습 웹사이트: https://edu-ops-ai-course-vercel.vercel.app
-- 강사용 원본: `index.html`, `content/`, `practice/`
-- 백업용 실습 패키지: `practice/` 안의 실습 프롬프트, 템플릿, 샘플 자료
+- 강사용 원본: `index.html`, `content/`
 
 웹사이트는 `시작하기 → 이해하기 → 설계하기 → 만들기 → 마무리` 흐름으로 구성되어 있습니다.
 수강생은 Vercel 페이지를 보면서 Claude Code 또는 Codex에서 실습을 진행합니다.
@@ -28,9 +27,6 @@
 ## 강사용 설치 안내
 
 수강생에게는 Vercel 학습 웹사이트 링크를 공유합니다.
-GitHub 링크는 샘플 파일, 템플릿, 오프라인 백업이 필요한 경우에만 안내합니다.
-
-Claude Code는 루트의 `CLAUDE.md`를 읽고, Codex는 루트의 `AGENTS.md`를 읽도록 구성했습니다. 두 파일 모두 `practice` 폴더의 업무 매뉴얼을 불러오므로 어느 도구에서 시작해도 같은 실습 흐름으로 진행됩니다.
 
 Clarify는 실습 전에 먼저 설치하거나 사용 가능 여부를 확인합니다.
 
@@ -48,7 +44,7 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 ```
 
 Codex에서는 marketplace 추가 후 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
-설치가 바로 보이지 않으면 `practice/prompts/02-clarify-request.md`로 같은 질문 흐름을 진행합니다.
+설치가 바로 보이지 않으면 웹사이트의 Clarify 실행 프롬프트를 그대로 사용합니다.
 
 Windows에서 Claude Code 설치가 필요한 수강생은 PowerShell에서 아래 명령을 실행합니다.
 
@@ -59,16 +55,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 npm install -g @anthropic-ai/claude-code
 ```
 
-터미널을 사용할 수 있는 수강생은 아래처럼 받을 수 있습니다.
-
-```bash
-git clone [강사가 공유한 GitHub 링크]
-cd edu-ops-ai-course
-python3 -m http.server 18790
-```
-
-그 다음 브라우저에서 `http://127.0.0.1:18790`을 열면 학습 웹사이트를 볼 수 있습니다. 포트가 이미 사용 중이면 `18791`처럼 비어 있는 번호로 바꿔 실행하면 됩니다.
-
 ## 핵심 메시지
 
 아이디어를 같이 떠올리고 다듬을 때는 Claude Code, 정해진 업무를 정확히 처리하고 산출물로 만들 때는 Codex.
@@ -78,12 +64,8 @@ python3 -m http.server 18790
 - `slides/index.html`: 강의용 HTML 슬라이드
 - `index.html`: 웹 가이드북 첫 화면
 - `content/`: 웹 가이드북 본문 Markdown
-- `practice/README.md`: 수강생 실습 안내서
-- `practice/sample-data/`: 자료 연결이 어려울 때 쓰는 샘플 워크북과 백업 파일
-- `practice/private-data/`: 수강생 개인 자료를 넣는 폴더
-- `practice/prompts/`: Claude Code/Codex에 붙여넣을 요청문
 - `practice/templates/`: 결과물 양식
-- `practice/examples/`: 완성 예시
+- `practice/`: 강사용 참고 자료
 
 ## 진행 흐름
 
@@ -95,12 +77,11 @@ python3 -m http.server 18790
 6. Clarify로 내 업무 구조화하기: 질문을 받으며 업무와 Skill 초안 만들기
 7. 첫 결과물 만들기
 8. 나만의 업무 레시피 보강하기
-9. AI 업무 매뉴얼로 기준 보강하기: `CLAUDE.md`, `AGENTS.md`
+9. AI 업무 매뉴얼로 기준 보강하기
 
 ## 수강생 데이터 원칙
 
 실제 업무 자료는 가능하면 MCP나 Connector로 연결합니다.
-연결이 어렵거나 익명화가 필요한 export 파일은 `practice/private-data/`에만 넣습니다. 이 폴더는 공유 저장소에 올리지 않는 전제입니다.
 
 민감정보가 들어간 자료를 사용할 때는 다음을 지킵니다.
 

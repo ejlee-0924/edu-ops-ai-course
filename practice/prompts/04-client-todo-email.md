@@ -1,14 +1,10 @@
 # 04. 기업별 할 일 정리와 메일 초안
 
 ```text
-연결된 내 실제 운영 업무 자료를 읽고
+연결된 내 실제 운영 업무 자료를 기준으로
 기업별 할 일 목록과 고객사 첫 회신 메일 초안을 만들어줘.
 
 주로 확인할 자료는 Slack 싱크업 채널, Gmail 고객사 메일, Notion 운영 메모야.
-
-내 실제 자료가 없으면 Edu Ops AI Course Sample 문서의
-syncup_notes, client_email_thread, cs_inquiries 탭으로 흐름을 확인해줘.
-자료 연결이 어렵다면 practice/sample-data 폴더의 Markdown 백업 파일을 사용해줘.
 
 결과물에는 다음을 포함해줘:
 1. 기업별 할 일 목록
