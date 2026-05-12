@@ -8,7 +8,8 @@
 
 https://edu-ops-ai-course-vercel.vercel.app
 
-수강생은 학습 웹사이트에서 `설치하고 시작하기`를 확인한 뒤, `설계하기 > Clarify로 내 업무 구조화하기`에서 실제 시작 프롬프트를 복사합니다.
+수강생은 학습 웹사이트에서 `설치하고 시작하기`를 확인한 뒤, `내 업무 자료 준비하기`와 `MCP 설치하고 자료 연결하기`를 먼저 진행합니다.
+그 다음 `설계하기 > Clarify로 내 업무 구조화하기`에서 실제 시작 프롬프트를 복사합니다.
 
 시작 프롬프트는 그 페이지 한 곳에만 둡니다.
 첫 질문은 보통 “어떤 반복 업무를 줄이고 싶나요?”입니다.
@@ -114,7 +115,8 @@ python3 -m http.server 18790
 
 ## Claude Code Google Workspace MCP 설치
 
-Google Sheets, Gmail, Drive, Docs 자료 연결은 Claude Code에서 `workspace-mcp`를 설치해 진행합니다.
+Google Sheets, Gmail, Drive, Docs 자료 연결은 웹사이트의 `시작하기 > MCP 설치하고 자료 연결하기`에서 진행합니다.
+Claude Code에서는 `workspace-mcp`를 설치합니다.
 강사는 Google OAuth Client ID와 Client Secret을 비공개로 제공합니다.
 이 값은 GitHub/Vercel 공개 자료에 그대로 올리지 않습니다.
 
@@ -127,4 +129,3 @@ claude mcp add workspace-mcp --scope user \
 
 설치 후 Google 계정 승인 화면이 뜨면 수업용 계정으로 승인합니다.
 그 다음 수강생이 고른 Skill에 필요한 실제 업무 자료를 기준으로 자료 연결을 확인합니다.
-자료가 없거나 계정 연결이 어려운 수강생만 샘플 워크북이나 백업 파일로 흐름을 확인합니다.

@@ -11,6 +11,7 @@ window.SITE_CONFIG = {
         { id: "outcomes", title: "오늘 만들 결과물" },
         { id: "install", title: "설치하고 시작하기" },
         { id: "data", title: "내 업무 자료 준비하기" },
+        { id: "mcp", title: "MCP 설치하고 자료 연결하기" },
       ],
     },
     {
@@ -26,7 +27,6 @@ window.SITE_CONFIG = {
       title: "설계하기",
       pages: [
         { id: "clarify", title: "Clarify로 내 업무 구조화하기" },
-        { id: "mcp", title: "업무 자료 연결(MCP)" },
         { id: "criteria", title: "좋은 결과물 기준 정하기" },
         { id: "manual", title: "AI 업무 매뉴얼 만들기" },
       ],
