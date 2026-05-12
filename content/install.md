@@ -90,9 +90,11 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 - Codex는 `AGENTS.md`를 읽고 진행합니다.
 - 두 파일은 같은 교육 운영 업무 매뉴얼을 불러옵니다.
 
-## Google Sheets MCP 준비
+## 업무 자료 연결 준비
 
-이 교육의 자료 연결 실습은 Claude Code에 `workspace-mcp`를 설치해 Google Sheets MCP를 사용하는 방식으로 진행합니다.
+이 교육의 자료 연결 실습은 내가 만들 Skill에 필요한 자료실을 연결하는 방식으로 진행합니다.
+Google Sheets, Gmail, Drive, Docs 자료는 Claude Code에 `workspace-mcp`를 설치해 연결할 수 있습니다.
+Slack이나 Notion은 사용하는 도구에서 MCP나 Connector가 가능하면 연결하고, 어렵다면 필요한 자료를 export해서 사용합니다.
 
 강사는 수업 전에 Google OAuth Client ID와 Client Secret을 비공개로 준비합니다.
 이 값은 GitHub, Vercel, 강의 공개 자료에 그대로 올리지 않습니다.
@@ -109,6 +111,5 @@ claude mcp add workspace-mcp --scope user \
 설치 후에는 Google 계정 승인 화면이 뜰 수 있습니다.
 승인이 끝나면 Claude Code에서 Google Sheets, Drive, Gmail 같은 업무 자료를 찾을 수 있습니다.
 
-수업에서는 수강생의 실제 업무 Google Sheet를 먼저 찾게 합니다.
-자료가 없거나 계정 연결이 어려운 경우에만 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 열어 흐름을 확인합니다.
-회사 보안이나 계정 문제로 연결이 어려운 경우에는 `practice/sample-data/`의 CSV/Markdown 백업 파일을 사용합니다.
+수업에서는 수강생이 고른 Skill에 필요한 실제 업무 자료를 먼저 찾게 합니다.
+자료가 없거나 계정 연결이 어려운 경우에만 샘플 워크북이나 `practice/sample-data/`의 CSV/Markdown 백업 파일을 사용합니다.

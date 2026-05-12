@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
         { id: "welcome", title: "환영합니다" },
         { id: "outcomes", title: "오늘 만들 결과물" },
         { id: "install", title: "설치하고 시작하기" },
-        { id: "data", title: "내 Google Sheet 준비하기" },
+        { id: "data", title: "내 업무 자료 준비하기" },
       ],
     },
     {
@@ -27,7 +27,7 @@ window.SITE_CONFIG = {
       pages: [
         { id: "skill-start", title: "내 업무 Skill로 시작하기" },
         { id: "clarify", title: "Clarify 질문으로 구조화하기" },
-        { id: "mcp", title: "Google Sheets 자료 연결(MCP)" },
+        { id: "mcp", title: "업무 자료 연결(MCP)" },
         { id: "criteria", title: "좋은 결과물 기준 정하기" },
         { id: "manual", title: "AI 업무 매뉴얼 만들기" },
       ],

@@ -8,14 +8,14 @@
 1. 내 실제 반복 업무 하나를 고릅니다.
 2. Clarify 설치 또는 사용 가능 여부를 확인합니다.
 3. Clarify가 질문을 하나씩 던지며 업무를 구조화합니다.
-4. Google Sheets MCP로 내 업무 시트를 연결합니다.
+4. MCP나 Connector로 내 업무 자료를 연결합니다.
 5. 첫 결과물을 만들어봅니다.
 6. 잘 된 흐름을 내 업무 레시피로 저장합니다.
 
 ## 폴더 사용법
 
-- `sample-data/`: Google Sheets MCP 실습용 샘플 워크북과 연결 실패 시 사용하는 백업 파일입니다.
-- `private-data/`: Google Sheets MCP 연결이 어려울 때 내 실제 업무 자료 export를 넣는 곳입니다. 이름, 이메일, 전화번호, 민감한 고객 정보는 가능하면 미리 지워주세요.
+- `sample-data/`: 자료 연결이 어려울 때 사용하는 샘플 워크북과 백업 파일입니다.
+- `private-data/`: MCP나 Connector 연결이 어려울 때 내 실제 업무 자료 export를 넣는 곳입니다. 이름, 이메일, 전화번호, 민감한 고객 정보는 가능하면 미리 지워주세요.
 - `prompts/`: Claude Code/Codex에 붙여넣는 요청문입니다.
 - `templates/`: 결과물을 정리할 양식입니다.
 - `examples/`: 샘플 자료로 만든 완성 예시입니다.
@@ -52,7 +52,7 @@ AI는 Ask Your Question 방식으로 질문을 하나씩 던지고, 수강생은
 결과물은 다음을 포함합니다.
 
 - 업무 실행 의뢰서 초안
-- 필요한 Google Sheet 또는 자료 목록
+- 필요한 업무 자료 목록
 - 첫 실행 프롬프트
 - 개인용 Skill 초안
 
@@ -61,9 +61,9 @@ AI는 Ask Your Question 방식으로 질문을 하나씩 던지고, 수강생은
 `prompts/02-clarify-request.md`를 사용해 답변을 더 정리합니다.
 처음부터 완성형 양식을 채우는 것이 아니라, 질문과 답변을 통해 업무 기준을 구조화합니다.
 
-### 3. Google Sheets 자료 연결(MCP)
+### 3. 업무 자료 연결(MCP)
 
-MCP는 AI가 자료를 찾으러 가는 길입니다. 수강생에게는 먼저 "Google Sheets 자료 연결"이라고 설명하고, MCP는 그 연결 방식의 이름이라고 덧붙입니다.
+MCP는 AI가 자료를 찾으러 가는 길입니다. 수강생에게는 먼저 "업무 자료 연결"이라고 설명하고, MCP는 그 연결 방식의 이름이라고 덧붙입니다.
 
 Claude Code에서는 아래 방식으로 `workspace-mcp`를 설치합니다.
 
@@ -77,7 +77,7 @@ claude mcp add workspace-mcp --scope user \
 Google OAuth Client ID와 Client Secret은 공개 저장소에 넣지 않습니다.
 강사는 수업용 비공개 채널이나 화면 공유로 값을 제공합니다.
 
-내 Google Sheet가 있으면 그것을 먼저 연결합니다.
+내 업무 자료가 있으면 그것을 먼저 연결합니다.
 자료가 없거나 연결이 어렵다면 `Edu Ops AI Course Sample` 문서나 `sample-data/`의 백업 파일을 사용합니다.
 
 `prompts/01-mcp-material-check.md`를 사용합니다.
@@ -107,8 +107,8 @@ Clarify로 구조화한 업무와 첫 결과물을 개인용 Skill 초안으로 
 
 ## 안전 원칙
 
-- 처음 실습할 때는 내 실제 업무와 Google Sheet를 우선 사용합니다.
-- 샘플 Google Sheet는 자료가 없거나 연결이 어려울 때만 사용합니다.
+- 처음 실습할 때는 내 실제 업무 자료를 우선 사용합니다.
+- 샘플 자료는 자료가 없거나 연결이 어려울 때만 사용합니다.
 - AI 결과물은 초안입니다. 발송 전 사람이 검토합니다.
 - 실제 정성 의견에 없는 내용을 만들지 않습니다.
 - 고객사명, 담당자명, 수강생명은 필요한 경우 익명화합니다.

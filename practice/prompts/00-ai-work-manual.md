@@ -29,7 +29,7 @@
 2. Codex용 AGENTS.md에 넣을 규칙 초안
 3. Claude Code용 CLAUDE.md에 넣을 규칙 초안
 4. 개인정보/민감정보 처리 체크리스트
-5. 다음 실습인 Google Sheets MCP 자료 연결에서 확인할 자료 목록
+5. 다음 실습인 업무 자료 연결에서 확인할 자료 목록
 
 결과는 가능하면 practice/outputs/my-ai-work-manual.md에 저장해줘.
 파일 저장이 어려우면 채팅창에 먼저 보여줘.

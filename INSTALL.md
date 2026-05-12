@@ -102,7 +102,7 @@ python3 -m http.server 18790
 
 ## 수강생 실데이터 안내
 
-실제 업무 자료는 가능하면 Google Sheets MCP로 연결합니다.
+실제 업무 자료는 가능하면 MCP나 Connector로 연결합니다.
 연결이 어렵거나 사전 익명화가 필요하면 `practice/private-data/`에 export 파일을 넣습니다.
 
 주의:
@@ -113,7 +113,7 @@ python3 -m http.server 18790
 
 ## Claude Code Google Workspace MCP 설치
 
-Google Sheets 실습은 Claude Code에서 `workspace-mcp`를 설치해 진행합니다.
+Google Sheets, Gmail, Drive, Docs 자료 연결은 Claude Code에서 `workspace-mcp`를 설치해 진행합니다.
 강사는 Google OAuth Client ID와 Client Secret을 비공개로 제공합니다.
 이 값은 GitHub/Vercel 공개 자료에 그대로 올리지 않습니다.
 
@@ -125,5 +125,5 @@ claude mcp add workspace-mcp --scope user \
 ```
 
 설치 후 Google 계정 승인 화면이 뜨면 수업용 계정으로 승인합니다.
-그 다음 수강생의 실제 업무 Google Sheet를 기준으로 자료 연결을 확인합니다.
-자료가 없거나 계정 연결이 어려운 수강생만 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 열어 흐름을 확인합니다.
+그 다음 수강생이 고른 Skill에 필요한 실제 업무 자료를 기준으로 자료 연결을 확인합니다.
+자료가 없거나 계정 연결이 어려운 수강생만 샘플 워크북이나 백업 파일로 흐름을 확인합니다.

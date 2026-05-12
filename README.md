@@ -78,7 +78,7 @@ python3 -m http.server 18790
 - `index.html`: 웹 가이드북 첫 화면
 - `content/`: 웹 가이드북 본문 Markdown
 - `practice/README.md`: 수강생 실습 안내서
-- `practice/sample-data/`: Google Sheets MCP 실습용 샘플 워크북과 백업 파일
+- `practice/sample-data/`: 자료 연결이 어려울 때 쓰는 샘플 워크북과 백업 파일
 - `practice/private-data/`: 수강생 개인 자료를 넣는 폴더
 - `practice/prompts/`: Claude Code/Codex에 붙여넣을 요청문
 - `practice/templates/`: 결과물 양식
@@ -91,13 +91,13 @@ python3 -m http.server 18790
 3. Clarify 설치 또는 사용 가능 여부 확인하기
 4. 내 업무 Skill로 시작하기: 실제 반복 업무 하나 고르기
 5. Clarify 질문으로 구조화하기: Ask Your Question 방식으로 의뢰서 만들기
-6. Google Sheets 자료 연결(MCP): 내 업무 시트를 AI가 볼 수 있게 연결하기
+6. 업무 자료 연결(MCP): 내 업무 자료를 AI가 볼 수 있게 연결하기
 7. 첫 결과물과 업무 레시피 만들기
 8. AI 업무 매뉴얼로 기준 보강하기: `CLAUDE.md`, `AGENTS.md`
 
 ## 수강생 데이터 원칙
 
-실제 업무 자료는 가능하면 Google Sheets MCP로 연결합니다.
+실제 업무 자료는 가능하면 MCP나 Connector로 연결합니다.
 연결이 어렵거나 익명화가 필요한 export 파일은 `practice/private-data/`에만 넣습니다. 이 폴더는 공유 저장소에 올리지 않는 전제입니다.
 
 민감정보가 들어간 자료를 사용할 때는 다음을 지킵니다.
