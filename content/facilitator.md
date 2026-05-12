@@ -20,7 +20,8 @@
 | Claude Code가 설치되지 않은 경우 | Windows PowerShell 설치 명령을 먼저 실행하고 새 PowerShell 창에서 `claude --version` 확인 |
 | Clarify가 설치되지 않은 경우 | Claude Code는 `/plugin marketplace add team-attention/plugins-for-claude-natives` 후 `/plugin install clarify` 실행 |
 | Codex에서 Clarify 설치 메뉴가 안 보이는 경우 | `codex plugin marketplace add team-attention/plugins-for-claude-natives` 실행 후 Plugins/Skills에서 확인, 안 보이면 제공 프롬프트로 진행 |
-| GitHub 링크를 AI가 못 여는 경우 | ZIP 다운로드 방식으로 안내 |
+| 수강생이 GitHub에서 막히는 경우 | GitHub를 쓰지 말고 Vercel 학습 웹사이트에서 바로 진행 |
+| 샘플 파일이 꼭 필요한 경우 | 강사용 GitHub/ZIP 백업 방식으로 안내 |
 | 실제 Google Sheet가 없는 경우 | 샘플 워크북으로만 흐름 확인 |
 | Google Sheets MCP 연결이 안 되는 경우 | export 파일 또는 샘플 워크북의 백업 파일로 진행 |
 | OAuth 값이 노출될 수 있는 경우 | 화면 공유나 비공개 채널로만 전달하고 공개 저장소에는 placeholder 사용 |

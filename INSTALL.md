@@ -1,6 +1,6 @@
 # 설치 및 진행 가이드
 
-이 문서는 강사가 수강생에게 GitHub 링크를 공유할 때 함께 안내하기 위한 문서입니다.
+이 문서는 강사가 수강생에게 학습 웹사이트를 공유할 때 함께 안내하기 위한 문서입니다.
 
 ## 가장 쉬운 진행 방식
 
@@ -11,12 +11,14 @@ https://edu-ops-ai-course-vercel.vercel.app
 수강생은 Claude Code 또는 Codex에 아래 문장을 붙여넣습니다.
 
 ```text
-이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
-그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
-샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘:
+아래 교육 페이지 흐름대로 내 반복 업무를 개인용 Skill로 만들고 싶어.
+https://edu-ops-ai-course-vercel.vercel.app
 
-[GitHub 링크]
+먼저 Clarify 사용 가능 여부를 확인하고, 나에게 질문을 하나씩 해줘.
 ```
+
+이 프롬프트를 넣으면 AI는 Clarify 확인 후 첫 질문부터 시작합니다.
+첫 질문은 보통 “어떤 반복 업무를 줄이고 싶나요?”입니다.
 
 Claude Code와 Codex 모두 사용할 수 있습니다.
 
@@ -71,9 +73,10 @@ claude --version
 
 버전이 보이지 않으면 PowerShell을 새로 열고 다시 확인합니다.
 
-## ZIP 다운로드 방식
+## GitHub/ZIP 백업
 
-회사 보안 정책이나 네트워크 제한 때문에 AI가 GitHub 링크를 직접 열지 못할 수 있습니다. 그럴 때는 아래 방식으로 진행합니다.
+수강생은 보통 GitHub를 열 필요가 없습니다.
+샘플 파일, 템플릿, 오프라인 실습 패키지가 필요할 때만 아래 방식으로 진행합니다.
 
 1. GitHub 페이지를 엽니다.
 2. `Code` 버튼을 누릅니다.
@@ -83,9 +86,8 @@ claude --version
 6. 아래 문장을 입력합니다.
 
 ```text
-이 폴더의 README를 읽고, Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
-그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
-샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
+이 폴더의 README와 START_HERE.md를 읽고, 교육 페이지 흐름에 맞춰 내 반복 업무를 개인용 Skill로 만드는 실습을 진행해줘.
+먼저 Clarify 사용 가능 여부를 확인하고, 질문을 하나씩 해줘.
 ```
 
 ## 터미널 사용 가능자용
@@ -101,9 +103,8 @@ python3 -m http.server 18790
 그다음 Claude Code 또는 Codex에서 다음을 입력합니다.
 
 ```text
-이 저장소의 README.md와 practice/START_HERE.md를 읽고, Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
-그 다음 설계하기 > 내 업무 Skill로 시작하기부터 실습을 진행해줘.
-샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
+이 저장소의 README.md와 practice/START_HERE.md를 읽고, 교육 페이지 흐름에 맞춰 내 반복 업무를 개인용 Skill로 만드는 실습을 진행해줘.
+먼저 Clarify 사용 가능 여부를 확인하고, 질문을 하나씩 해줘.
 ```
 
 ## 수강생 실데이터 안내

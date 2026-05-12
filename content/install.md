@@ -20,7 +20,7 @@ npm install -g @anthropic-ai/claude-code
 | 명령 | 의미 |
 |---|---|
 | `winget install --id OpenJS.NodeJS.LTS -e --source winget` | Claude Code를 설치하기 위한 Node.js를 설치합니다. |
-| `winget install --id Git.Git -e --source winget` | GitHub 실습 자료를 받을 수 있게 Git을 설치합니다. |
+| `winget install --id Git.Git -e --source winget` | 강사용 원본이나 백업 자료를 받을 수 있게 Git을 설치합니다. |
 | `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` | 현재 사용자 계정에서 필요한 실행 권한을 허용합니다. |
 | `npm install -g @anthropic-ai/claude-code` | Claude Code를 설치합니다. |
 
@@ -60,18 +60,29 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
 이 경우에도 실습은 멈추지 않습니다. `practice/prompts/00-start-with-my-skill.md`와 `practice/prompts/02-clarify-request.md`가 같은 Ask Your Question 흐름을 재현합니다.
 
-가장 쉬운 방법은 Claude Code 또는 Codex에 GitHub 링크를 주는 것입니다.
+가장 쉬운 방법은 Claude Code 또는 Codex에 교육 페이지 링크를 주는 것입니다.
 
 ```text
-이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
-그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
-샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘:
-https://github.com/ejlee-0924/edu-ops-ai-course
+아래 교육 페이지 흐름대로 내 반복 업무를 개인용 Skill로 만들고 싶어.
+https://edu-ops-ai-course-vercel.vercel.app
+
+먼저 Clarify 사용 가능 여부를 확인하고, 나에게 질문을 하나씩 해줘.
 ```
 
-## ZIP으로 시작하기
+## 실행 후 흐름
 
-회사 보안 정책 때문에 AI가 GitHub 링크를 직접 열지 못할 수 있습니다. 그럴 때는 ZIP으로 받습니다.
+이 프롬프트를 넣으면 AI는 바로 결과물을 만들지 않고 질문부터 시작합니다.
+
+1. Clarify 설치 또는 사용 가능 여부를 확인합니다.
+2. “어떤 반복 업무를 줄이고 싶나요?”라고 묻습니다.
+3. 수강생 답변을 바탕으로 필요한 Google Sheet, 결과물 형태, 말투, 개인정보 기준을 하나씩 묻습니다.
+4. 답변을 업무 실행 의뢰서로 정리합니다.
+5. 첫 실행 프롬프트와 개인용 Skill 초안을 만듭니다.
+
+## GitHub/ZIP 백업
+
+수강생은 보통 GitHub를 열 필요가 없습니다.
+샘플 파일이나 오프라인 실습 패키지가 필요할 때만 강사가 GitHub/ZIP 방식을 안내합니다.
 
 1. GitHub 저장소를 엽니다.
 2. `Code` 버튼을 누릅니다.
@@ -81,9 +92,8 @@ https://github.com/ejlee-0924/edu-ops-ai-course
 6. 아래 문장을 입력합니다.
 
 ```text
-이 폴더의 README를 읽고, Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
-그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
-샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
+이 폴더의 README와 START_HERE.md를 읽고, 교육 페이지 흐름에 맞춰 내 반복 업무를 개인용 Skill로 만드는 실습을 진행해줘.
+먼저 Clarify 사용 가능 여부를 확인하고, 질문을 하나씩 해줘.
 ```
 
 ## Claude Code와 Codex 둘 다 가능
