@@ -8,16 +8,9 @@
 
 https://edu-ops-ai-course-vercel.vercel.app
 
-수강생은 Claude Code 또는 Codex에 아래 문장을 붙여넣습니다.
+수강생은 학습 웹사이트에서 `설치하고 시작하기`를 확인한 뒤, `설계하기 > 내 업무 Skill로 시작하기`에서 실제 시작 프롬프트를 복사합니다.
 
-```text
-아래 교육 페이지 흐름대로 내 반복 업무를 개인용 Skill로 만들고 싶어.
-https://edu-ops-ai-course-vercel.vercel.app
-
-먼저 Clarify 사용 가능 여부를 확인하고, 나에게 질문을 하나씩 해줘.
-```
-
-이 프롬프트를 넣으면 AI는 Clarify 확인 후 첫 질문부터 시작합니다.
+시작 프롬프트는 그 페이지 한 곳에만 둡니다.
 첫 질문은 보통 “어떤 반복 업무를 줄이고 싶나요?”입니다.
 
 Claude Code와 Codex 모두 사용할 수 있습니다.

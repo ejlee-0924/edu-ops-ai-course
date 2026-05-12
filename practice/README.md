@@ -23,14 +23,8 @@
 
 ## 실습 흐름
 
-수강생이 Vercel 페이지에서 시작할 때는 아래 짧은 프롬프트만 사용합니다.
-
-```text
-아래 교육 페이지 흐름대로 내 반복 업무를 개인용 Skill로 만들고 싶어.
-https://edu-ops-ai-course-vercel.vercel.app
-
-먼저 Clarify 사용 가능 여부를 확인하고, 나에게 질문을 하나씩 해줘.
-```
+수강생이 Vercel 페이지에서 시작할 때는 `설계하기 > 내 업무 Skill로 시작하기`의 시작 프롬프트만 사용합니다.
+이 폴더에서 직접 시작해야 할 때는 `prompts/00-start-with-my-skill.md`를 사용합니다.
 
 ### 0. Clarify 설치 확인
 

@@ -60,24 +60,12 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
 이 경우에도 실습은 멈추지 않습니다. `practice/prompts/00-start-with-my-skill.md`와 `practice/prompts/02-clarify-request.md`가 같은 Ask Your Question 흐름을 재현합니다.
 
-가장 쉬운 방법은 Claude Code 또는 Codex에 교육 페이지 링크를 주는 것입니다.
+## 다음 단계
 
-```text
-아래 교육 페이지 흐름대로 내 반복 업무를 개인용 Skill로 만들고 싶어.
-https://edu-ops-ai-course-vercel.vercel.app
+설치가 끝나면 `설계하기 > 내 업무 Skill로 시작하기`로 이동합니다.
+실제 복사 프롬프트는 그 페이지 한 곳에만 있습니다.
 
-먼저 Clarify 사용 가능 여부를 확인하고, 나에게 질문을 하나씩 해줘.
-```
-
-## 실행 후 흐름
-
-이 프롬프트를 넣으면 AI는 바로 결과물을 만들지 않고 질문부터 시작합니다.
-
-1. Clarify 설치 또는 사용 가능 여부를 확인합니다.
-2. “어떤 반복 업무를 줄이고 싶나요?”라고 묻습니다.
-3. 수강생 답변을 바탕으로 필요한 Google Sheet, 결과물 형태, 말투, 개인정보 기준을 하나씩 묻습니다.
-4. 답변을 업무 실행 의뢰서로 정리합니다.
-5. 첫 실행 프롬프트와 개인용 Skill 초안을 만듭니다.
+프롬프트를 실행하면 AI는 바로 결과물을 만들지 않고 “어떤 반복 업무를 줄이고 싶나요?”부터 질문을 하나씩 시작합니다.
 
 ## GitHub/ZIP 백업
 
