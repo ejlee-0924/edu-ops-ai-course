@@ -4,14 +4,15 @@ MCP는 AI가 자료를 찾으러 가는 길입니다.
 수강생에게는 먼저 **업무 자료 연결**이라고 설명하면 됩니다.
 
 이 과정에서는 실습을 시작하기 전에 필요한 연결을 먼저 끝냅니다.
-Google Sheets, Gmail, Drive, Docs 자료는 Claude Code에 `workspace-mcp`를 설치해서 연결합니다.
+Google Sheets, Gmail, Drive, Docs 자료는 Claude Code 또는 Codex에 `workspace-mcp`를 설치해서 연결합니다.
 Slack이나 Notion은 사용하는 도구에서 MCP나 Connector가 가능하면 연결합니다.
 
 ## Claude Code에 Google Workspace MCP 설치하기
 
-아래 명령은 Claude Code 기준입니다.
 강사는 Google OAuth Client ID와 Client Secret을 비공개로 제공합니다.
 이 값은 강의 공개 자료에 그대로 올리지 않습니다.
+
+Claude Code를 쓰는 수강생은 아래 명령을 사용합니다.
 
 ```bash
 claude mcp add workspace-mcp --scope user \
@@ -19,6 +20,26 @@ claude mcp add workspace-mcp --scope user \
   -e GOOGLE_OAUTH_CLIENT_SECRET="[강사가 제공한 Google OAuth Client Secret]" \
   -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
 ```
+
+## Codex에 Google Workspace MCP 설치하기
+
+Codex를 쓰는 수강생은 아래 명령을 사용합니다.
+
+```bash
+codex mcp add workspace-mcp \
+  --env GOOGLE_OAUTH_CLIENT_ID="[강사가 제공한 Google OAuth Client ID]" \
+  --env GOOGLE_OAUTH_CLIENT_SECRET="[강사가 제공한 Google OAuth Client Secret]" \
+  -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
+```
+
+설치 확인은 아래 명령으로 합니다.
+
+```bash
+codex mcp list
+```
+
+목록에 `workspace-mcp`가 보이면 Codex에서도 Google Workspace 자료 연결 준비가 된 것입니다.
+설치 후 Codex 앱이나 터미널 세션을 새로 열면 더 안정적입니다.
 
 여기서 켜는 도구는 다음과 같습니다.
 

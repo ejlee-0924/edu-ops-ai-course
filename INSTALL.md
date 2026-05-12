@@ -80,7 +80,7 @@ claude --version
 ## Claude Code Google Workspace MCP 설치
 
 Google Sheets, Gmail, Drive, Docs 자료 연결은 웹사이트의 `시작하기 > MCP 설치하고 자료 연결하기`에서 진행합니다.
-Claude Code에서는 `workspace-mcp`를 설치합니다.
+Claude Code 또는 Codex에 `workspace-mcp`를 설치합니다.
 강사는 Google OAuth Client ID와 Client Secret을 비공개로 제공합니다.
 이 값은 공개 자료에 그대로 올리지 않습니다.
 
@@ -88,6 +88,15 @@ Claude Code에서는 `workspace-mcp`를 설치합니다.
 claude mcp add workspace-mcp --scope user \
   -e GOOGLE_OAUTH_CLIENT_ID="[강사가 제공한 Google OAuth Client ID]" \
   -e GOOGLE_OAUTH_CLIENT_SECRET="[강사가 제공한 Google OAuth Client Secret]" \
+  -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
+```
+
+Codex를 쓰는 수강생은 아래 명령을 실행합니다.
+
+```bash
+codex mcp add workspace-mcp \
+  --env GOOGLE_OAUTH_CLIENT_ID="[강사가 제공한 Google OAuth Client ID]" \
+  --env GOOGLE_OAUTH_CLIENT_SECRET="[강사가 제공한 Google OAuth Client Secret]" \
   -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
 ```
 

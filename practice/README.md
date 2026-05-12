@@ -55,6 +55,15 @@ claude mcp add workspace-mcp --scope user \
   -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
 ```
 
+Codex에서는 아래 방식으로 설치합니다.
+
+```bash
+codex mcp add workspace-mcp \
+  --env GOOGLE_OAUTH_CLIENT_ID="[강사가 제공한 Google OAuth Client ID]" \
+  --env GOOGLE_OAUTH_CLIENT_SECRET="[강사가 제공한 Google OAuth Client Secret]" \
+  -- uvx workspace-mcp --tools sheets forms docs slides appscript gmail drive
+```
+
 Google OAuth Client ID와 Client Secret은 공개 저장소에 넣지 않습니다.
 강사는 수업용 비공개 채널이나 화면 공유로 값을 제공합니다.
 
