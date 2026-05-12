@@ -32,10 +32,39 @@ claude --version
 
 버전이 보이면 Claude Code 설치가 끝난 것입니다.
 
+## Clarify 먼저 설치하기
+
+이 교육은 Clarify 질문으로 내 업무를 구조화하는 과정부터 시작합니다.
+실습을 시작하기 전에 Clarify를 먼저 설치하거나, Codex에서 Clarify 사용 가능 여부를 확인합니다.
+
+### Claude Code에서 설치
+
+Claude Code 입력창에 아래 두 줄을 차례대로 입력합니다.
+
+```text
+/plugin marketplace add team-attention/plugins-for-claude-natives
+/plugin install clarify
+```
+
+설치 후 새 대화를 열거나 Claude Code를 다시 시작하면 더 안정적입니다.
+
+### Codex에서 확인
+
+Codex CLI에서는 아래 명령으로 플러그인 marketplace를 추가할 수 있습니다.
+
+```bash
+codex plugin marketplace add team-attention/plugins-for-claude-natives
+```
+
+그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
+현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
+이 경우에도 실습은 멈추지 않습니다. `practice/prompts/00-start-with-my-skill.md`와 `practice/prompts/02-clarify-request.md`가 같은 Ask Your Question 흐름을 재현합니다.
+
 가장 쉬운 방법은 Claude Code 또는 Codex에 GitHub 링크를 주는 것입니다.
 
 ```text
-이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
+그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
 샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘:
 https://github.com/ejlee-0924/edu-ops-ai-course
 ```
@@ -52,7 +81,8 @@ https://github.com/ejlee-0924/edu-ops-ai-course
 6. 아래 문장을 입력합니다.
 
 ```text
-이 폴더의 README를 읽고, 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+이 폴더의 README를 읽고, Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
+그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
 샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
 ```
 

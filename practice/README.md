@@ -5,10 +5,11 @@
 개발자가 아니어도 괜찮습니다. 순서는 단순합니다.
 
 1. 내 실제 반복 업무 하나를 고릅니다.
-2. Clarify가 질문을 하나씩 던지며 업무를 구조화합니다.
-3. Google Sheets MCP로 내 업무 시트를 연결합니다.
-4. 첫 결과물을 만들어봅니다.
-5. 잘 된 흐름을 내 업무 레시피로 저장합니다.
+2. Clarify 설치 또는 사용 가능 여부를 확인합니다.
+3. Clarify가 질문을 하나씩 던지며 업무를 구조화합니다.
+4. Google Sheets MCP로 내 업무 시트를 연결합니다.
+5. 첫 결과물을 만들어봅니다.
+6. 잘 된 흐름을 내 업무 레시피로 저장합니다.
 
 ## 폴더 사용법
 
@@ -20,6 +21,24 @@
 - `outputs/`: 실습 결과물을 저장하는 폴더입니다.
 
 ## 실습 흐름
+
+### 0. Clarify 설치 확인
+
+Claude Code에서는 아래 두 줄을 입력합니다.
+
+```text
+/plugin marketplace add team-attention/plugins-for-claude-natives
+/plugin install clarify
+```
+
+Codex CLI에서는 아래 명령으로 marketplace를 추가합니다.
+
+```bash
+codex plugin marketplace add team-attention/plugins-for-claude-natives
+```
+
+그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
+Codex에서 설치가 바로 보이지 않아도 `prompts/00-start-with-my-skill.md`와 `prompts/02-clarify-request.md`로 같은 Ask Your Question 흐름을 진행할 수 있습니다.
 
 ### 1. 내 업무 Skill로 시작하기
 

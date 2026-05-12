@@ -11,7 +11,8 @@ https://edu-ops-ai-course-vercel.vercel.app
 수강생은 Claude Code 또는 Codex에 아래 문장을 붙여넣습니다.
 
 ```text
-이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
+그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
 샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘:
 
 [GitHub 링크]
@@ -22,6 +23,34 @@ Claude Code와 Codex 모두 사용할 수 있습니다.
 - Claude Code는 `CLAUDE.md`를 읽고 진행합니다.
 - Codex는 `AGENTS.md`를 읽고 진행합니다.
 - 두 파일 모두 같은 교육 운영 업무 매뉴얼을 불러오도록 되어 있습니다.
+
+## Clarify 설치
+
+이 교육은 Clarify 질문으로 내 업무를 구조화한 뒤 Skill 초안을 만드는 흐름입니다.
+수강생이 실습을 시작하기 전에 Clarify 설치 또는 사용 가능 여부를 먼저 확인하게 안내합니다.
+
+### Claude Code
+
+Claude Code 입력창에 아래 두 줄을 차례대로 입력합니다.
+
+```text
+/plugin marketplace add team-attention/plugins-for-claude-natives
+/plugin install clarify
+```
+
+설치 후 새 대화를 열거나 Claude Code를 다시 시작하면 더 안정적입니다.
+
+### Codex
+
+Codex CLI에서는 아래 명령으로 플러그인 marketplace를 추가할 수 있습니다.
+
+```bash
+codex plugin marketplace add team-attention/plugins-for-claude-natives
+```
+
+그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
+현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
+이 경우에는 `practice/prompts/00-start-with-my-skill.md`와 `practice/prompts/02-clarify-request.md`로 같은 Ask Your Question 흐름을 진행합니다.
 
 ## Windows에서 Claude Code 설치
 
@@ -54,7 +83,8 @@ claude --version
 6. 아래 문장을 입력합니다.
 
 ```text
-이 폴더의 README를 읽고, 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+이 폴더의 README를 읽고, Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
+그 다음 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
 샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
 ```
 
@@ -71,7 +101,8 @@ python3 -m http.server 18790
 그다음 Claude Code 또는 Codex에서 다음을 입력합니다.
 
 ```text
-이 저장소의 README.md와 practice/START_HERE.md를 읽고, 설계하기 > 내 업무 Skill로 시작하기부터 실습을 진행해줘.
+이 저장소의 README.md와 practice/START_HERE.md를 읽고, Clarify 설치 또는 사용 가능 여부를 먼저 확인해줘.
+그 다음 설계하기 > 내 업무 Skill로 시작하기부터 실습을 진행해줘.
 샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
 ```
 

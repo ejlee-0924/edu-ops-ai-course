@@ -2,6 +2,9 @@
 
 Clarify는 도구 이름이기 전에, AI에게 일을 맡기기 전의 정리 방식입니다.
 
+이 페이지를 시작하기 전에 `설치하고 시작하기`에서 Clarify 설치 또는 사용 가능 여부를 먼저 확인합니다.
+Claude Code에서는 `/plugin marketplace add`와 `/plugin install clarify`를 사용하고, Codex에서는 marketplace 추가 후 Plugins 또는 Skills 목록에서 Clarify를 활성화할 수 있는지 확인합니다.
+
 이번 과정에서는 완성된 양식을 먼저 채우지 않습니다.
 AI가 질문자가 되어 수강생의 실제 업무를 하나씩 묻고, 답변을 모아 업무 실행 의뢰서로 바꿉니다.
 
