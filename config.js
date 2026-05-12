@@ -34,9 +34,8 @@ window.SITE_CONFIG = {
     {
       title: "만들기",
       pages: [
-        { id: "satisfaction", title: "만족도 리포트 만들기" },
-        { id: "todos", title: "기업별 할 일 정리하기" },
-        { id: "email", title: "고객사 메일 초안 만들기" },
+        { id: "first-run", title: "내 Skill 첫 실행하기" },
+        { id: "examples", title: "만들 수 있는 업무 예시" },
         { id: "skill", title: "나만의 업무 레시피 보강하기" },
       ],
     },
