@@ -19,7 +19,7 @@
 ## 수강생 시작 방법
 
 수강생에게는 Vercel 학습 웹사이트 링크를 공유합니다.
-수강생은 `설치하고 시작하기`를 먼저 확인한 뒤, `설계하기 > 내 업무 Skill로 시작하기`에서 실제 시작 프롬프트를 복사합니다.
+수강생은 `설치하고 시작하기`를 먼저 확인한 뒤, `설계하기 > Clarify로 내 업무 구조화하기`에서 실제 시작 프롬프트를 복사합니다.
 
 시작 프롬프트는 웹사이트 안에서 한 곳에만 둡니다.
 그래야 설치 안내와 실습 시작 요청이 섞이지 않습니다.
@@ -47,7 +47,7 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 ```
 
 Codex에서는 marketplace 추가 후 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
-설치가 바로 보이지 않으면 `practice/prompts/00-start-with-my-skill.md`와 `practice/prompts/02-clarify-request.md`로 같은 질문 흐름을 진행합니다.
+설치가 바로 보이지 않으면 `practice/prompts/02-clarify-request.md`로 같은 질문 흐름을 진행합니다.
 
 Windows에서 Claude Code 설치가 필요한 수강생은 PowerShell에서 아래 명령을 실행합니다.
 
@@ -89,10 +89,10 @@ python3 -m http.server 18790
 1. ChatGPT/Gemini와 Claude Code/Codex의 차이
 2. 언제 Claude Code, 언제 Codex를 쓰는지
 3. Clarify 설치 또는 사용 가능 여부 확인하기
-4. 내 업무 Skill로 시작하기: 실제 반복 업무 하나 고르기
-5. Clarify 질문으로 구조화하기: Ask Your Question 방식으로 의뢰서 만들기
-6. 업무 자료 연결(MCP): 내 업무 자료를 AI가 볼 수 있게 연결하기
-7. 첫 결과물과 업무 레시피 만들기
+4. Clarify로 내 업무 구조화하기: Ask Your Question 방식으로 업무와 Skill 초안 만들기
+5. 업무 자료 연결(MCP): 내 업무 자료를 AI가 볼 수 있게 연결하기
+6. 첫 결과물 만들기
+7. 나만의 업무 레시피 보강하기
 8. AI 업무 매뉴얼로 기준 보강하기: `CLAUDE.md`, `AGENTS.md`
 
 ## 수강생 데이터 원칙

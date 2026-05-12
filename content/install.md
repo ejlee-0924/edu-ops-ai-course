@@ -58,11 +58,11 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 
 그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
 현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
-이 경우에도 실습은 멈추지 않습니다. `practice/prompts/00-start-with-my-skill.md`와 `practice/prompts/02-clarify-request.md`가 같은 Ask Your Question 흐름을 재현합니다.
+이 경우에도 실습은 멈추지 않습니다. `practice/prompts/02-clarify-request.md`가 같은 Ask Your Question 흐름을 재현합니다.
 
 ## 다음 단계
 
-설치가 끝나면 `설계하기 > 내 업무 Skill로 시작하기`로 이동합니다.
+설치가 끝나면 `설계하기 > Clarify로 내 업무 구조화하기`로 이동합니다.
 실제 복사 프롬프트는 그 페이지 한 곳에만 있습니다.
 
 프롬프트를 실행하면 AI는 바로 결과물을 만들지 않고 “어떤 반복 업무를 줄이고 싶나요?”부터 질문을 하나씩 시작합니다.

@@ -8,7 +8,7 @@
 
 https://edu-ops-ai-course-vercel.vercel.app
 
-수강생은 학습 웹사이트에서 `설치하고 시작하기`를 확인한 뒤, `설계하기 > 내 업무 Skill로 시작하기`에서 실제 시작 프롬프트를 복사합니다.
+수강생은 학습 웹사이트에서 `설치하고 시작하기`를 확인한 뒤, `설계하기 > Clarify로 내 업무 구조화하기`에서 실제 시작 프롬프트를 복사합니다.
 
 시작 프롬프트는 그 페이지 한 곳에만 둡니다.
 첫 질문은 보통 “어떤 반복 업무를 줄이고 싶나요?”입니다.
@@ -45,7 +45,7 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 
 그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
 현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
-이 경우에는 `practice/prompts/00-start-with-my-skill.md`와 `practice/prompts/02-clarify-request.md`로 같은 Ask Your Question 흐름을 진행합니다.
+이 경우에는 `practice/prompts/02-clarify-request.md`로 같은 Ask Your Question 흐름을 진행합니다.
 
 ## Windows에서 Claude Code 설치
 

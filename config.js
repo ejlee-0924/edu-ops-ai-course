@@ -25,8 +25,7 @@ window.SITE_CONFIG = {
     {
       title: "설계하기",
       pages: [
-        { id: "skill-start", title: "내 업무 Skill로 시작하기" },
-        { id: "clarify", title: "Clarify 질문으로 구조화하기" },
+        { id: "clarify", title: "Clarify로 내 업무 구조화하기" },
         { id: "mcp", title: "업무 자료 연결(MCP)" },
         { id: "criteria", title: "좋은 결과물 기준 정하기" },
         { id: "manual", title: "AI 업무 매뉴얼 만들기" },
@@ -35,10 +34,10 @@ window.SITE_CONFIG = {
     {
       title: "만들기",
       pages: [
-        { id: "skill", title: "나만의 업무 레시피 만들기" },
         { id: "satisfaction", title: "만족도 리포트 만들기" },
         { id: "todos", title: "기업별 할 일 정리하기" },
         { id: "email", title: "고객사 메일 초안 만들기" },
+        { id: "skill", title: "나만의 업무 레시피 보강하기" },
       ],
     },
     {

@@ -17,7 +17,7 @@
 1. `README.md`를 읽고 웹사이트 흐름을 설명합니다.
 2. Clarify 설치 또는 사용 가능 여부를 먼저 확인합니다.
 3. 수강생의 실제 반복 업무와 필요한 자료실이 있는지 확인합니다.
-4. `prompts/00-start-with-my-skill.md`로 Ask Your Question 방식 Clarify를 시작합니다.
+4. `prompts/02-clarify-request.md`로 Ask Your Question 방식 Clarify를 시작합니다.
 5. 필요할 때 `AGENTS.md`와 `CLAUDE.md`의 업무 매뉴얼을 확인합니다.
 6. 샘플 워크북과 `sample-data/`, `private-data/`는 백업 자료로만 안내합니다.
 7. 실습 결과는 수강생이 요청하면 `outputs/` 폴더에 저장합니다.
@@ -30,7 +30,7 @@
 시작하기 → 이해하기 → 설계하기 → 만들기 → 마무리
 ```
 
-실습은 `설계하기 > 내 업무 Skill로 시작하기`부터 시작합니다.
+실습은 `설계하기 > Clarify로 내 업무 구조화하기`부터 시작합니다.
 단, 수강생에게 처음 공유하는 입구는 GitHub가 아니라 Vercel 학습 웹사이트입니다.
 이 폴더는 샘플 파일이나 오프라인 백업이 필요할 때 사용합니다.
 
