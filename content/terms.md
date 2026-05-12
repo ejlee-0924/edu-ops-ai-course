@@ -8,7 +8,7 @@
 | Claude 업무 매뉴얼 | Claude Code에게 주는 업무 기준 |
 | Codex 업무 매뉴얼 | Codex에게 주는 업무 기준 |
 | MCP | AI가 Google Sheets, Slack, Drive, Gmail, Notion 같은 자료실로 가는 연결 통로 |
-| Clarify | AI에게 맡길 일을 정확히 적는 의뢰서 만들기 |
+| Clarify | AI가 바로 답하지 않고 먼저 질문하게 해서, 맡길 일을 의뢰서처럼 정리하는 도구 |
 | Skill | 잘 된 업무 요청을 저장한 반복 업무 레시피 |
 
 ## 기억할 문장

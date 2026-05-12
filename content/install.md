@@ -35,6 +35,8 @@ claude --version
 ## Clarify 먼저 설치하기
 
 이 교육은 Clarify 질문으로 내 업무를 구조화하는 과정부터 시작합니다.
+Clarify는 AI가 바로 결과물을 만들기 전에 필요한 질문을 먼저 하게 만드는 도구입니다.
+수강생은 Clarify 질문에 답하면서 내 반복 업무의 목표, 필요한 자료, 결과물 기준을 정리합니다.
 실습을 시작하기 전에 Clarify를 먼저 설치하거나, Codex에서 Clarify 사용 가능 여부를 확인합니다.
 
 ### Claude Code에서 설치
