@@ -46,6 +46,7 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
 현재 Codex CLI에는 Claude Code의 `/plugin install clarify`와 같은 설치 명령이 보이지 않을 수 있습니다.
 이 경우에는 `practice/prompts/02-clarify-request.md`로 같은 Clarify 질문 흐름을 진행합니다.
+Codex에서는 `Clarify로 해줘`만 입력하면 바로 정리문을 만들 수 있으므로, 실습 프롬프트처럼 질문형 대화로 진행해달라고 함께 적습니다.
 
 ## Windows에서 Claude Code 설치
 

@@ -43,6 +43,7 @@ codex plugin marketplace add team-attention/plugins-for-claude-natives
 
 그 다음 Codex 앱의 Plugins 또는 Skills 목록에서 `Clarify Codex`, `clarify`, `clarify-request`가 보이면 활성화합니다.
 Codex에서 설치가 바로 보이지 않아도 `prompts/02-clarify-request.md`로 같은 Clarify 질문 흐름을 진행할 수 있습니다.
+Codex에서는 `Clarify로 해줘`만 입력하면 바로 정리문을 만들 수 있으므로, 실습 프롬프트처럼 질문형 대화로 진행해달라고 함께 적습니다.
 
 ### 1. Clarify로 내 업무 구조화하기
 
