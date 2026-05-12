@@ -10,7 +10,7 @@ window.SITE_CONFIG = {
         { id: "welcome", title: "환영합니다" },
         { id: "outcomes", title: "오늘 만들 결과물" },
         { id: "install", title: "설치하고 시작하기" },
-        { id: "data", title: "샘플 Google Sheet 사용법" },
+        { id: "data", title: "내 Google Sheet 준비하기" },
       ],
     },
     {
@@ -25,26 +25,27 @@ window.SITE_CONFIG = {
     {
       title: "설계하기",
       pages: [
-        { id: "manual", title: "AI 업무 매뉴얼 만들기" },
+        { id: "skill-start", title: "내 업무 Skill로 시작하기" },
+        { id: "clarify", title: "Clarify 질문으로 구조화하기" },
         { id: "mcp", title: "Google Sheets 자료 연결(MCP)" },
-        { id: "clarify", title: "업무 실행 의뢰서 만들기" },
         { id: "criteria", title: "좋은 결과물 기준 정하기" },
+        { id: "manual", title: "AI 업무 매뉴얼 만들기" },
       ],
     },
     {
       title: "만들기",
       pages: [
+        { id: "skill", title: "나만의 업무 레시피 만들기" },
         { id: "satisfaction", title: "만족도 리포트 만들기" },
         { id: "todos", title: "기업별 할 일 정리하기" },
         { id: "email", title: "고객사 메일 초안 만들기" },
-        { id: "skill", title: "나만의 업무 레시피 만들기" },
       ],
     },
     {
       title: "마무리",
       pages: [
         { id: "checklist", title: "결과물 체크리스트" },
-        { id: "real-data", title: "내 자료로 바꿔보기" },
+        { id: "real-data", title: "내 자료로 다시 실행하기" },
         { id: "next-recipes", title: "다음 업무 레시피 후보" },
         { id: "facilitator", title: "강사용 진행 팁" },
       ],

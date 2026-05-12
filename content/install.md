@@ -35,7 +35,8 @@ claude --version
 가장 쉬운 방법은 Claude Code 또는 Codex에 GitHub 링크를 주는 것입니다.
 
 ```text
-이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 설계하기 > AI 업무 매뉴얼 만들기부터 순서대로 진행해줘:
+이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘:
 https://github.com/ejlee-0924/edu-ops-ai-course
 ```
 
@@ -51,7 +52,8 @@ https://github.com/ejlee-0924/edu-ops-ai-course
 6. 아래 문장을 입력합니다.
 
 ```text
-이 폴더의 README를 읽고, 설계하기 > AI 업무 매뉴얼 만들기부터 순서대로 진행해줘.
+이 폴더의 README를 읽고, 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
 ```
 
 ## Claude Code와 Codex 둘 다 가능
@@ -79,5 +81,6 @@ claude mcp add workspace-mcp --scope user \
 설치 후에는 Google 계정 승인 화면이 뜰 수 있습니다.
 승인이 끝나면 Claude Code에서 Google Sheets, Drive, Gmail 같은 업무 자료를 찾을 수 있습니다.
 
-수업에서는 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 연 뒤, Google Sheets MCP에서 해당 시트를 찾게 합니다.
-회사 보안이나 계정 문제로 연결이 어려운 경우에만 `practice/sample-data/`의 CSV/Markdown 백업 파일을 사용합니다.
+수업에서는 수강생의 실제 업무 Google Sheet를 먼저 찾게 합니다.
+자료가 없거나 계정 연결이 어려운 경우에만 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 열어 흐름을 확인합니다.
+회사 보안이나 계정 문제로 연결이 어려운 경우에는 `practice/sample-data/`의 CSV/Markdown 백업 파일을 사용합니다.

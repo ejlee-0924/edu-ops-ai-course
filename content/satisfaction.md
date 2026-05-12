@@ -4,14 +4,14 @@
 
 ## 사용하는 자료
 
-- Google Sheets MCP로 연결된 `Edu Ops AI Course Sample` 문서
-- 시트 탭: `satisfaction_comments`
+- Google Sheets MCP로 연결된 내 실제 만족도 조사 Google Sheet
+- 실제 자료가 없을 때만 `Edu Ops AI Course Sample` 문서의 `satisfaction_comments` 탭
 - 연결이 어려울 때만 `practice/sample-data/satisfaction-comments.csv` 백업 파일
 
 ## 실습 프롬프트
 
 ```text
-practice/prompts/03-satisfaction-reporting.md를 읽고, Google Sheets MCP로 연결된 satisfaction_comments 탭을 기준으로 만족도 정성 의견 리포트를 만들어줘.
+practice/prompts/03-satisfaction-reporting.md를 읽고, Google Sheets MCP로 연결된 내 실제 만족도 조사 시트를 기준으로 만족도 정성 의견 리포트를 만들어줘.
 앞에서 만든 업무 실행 의뢰서 기준을 반영해줘.
 ```
 

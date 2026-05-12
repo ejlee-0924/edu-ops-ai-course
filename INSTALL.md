@@ -11,7 +11,8 @@ https://edu-ops-ai-course-vercel.vercel.app
 수강생은 Claude Code 또는 Codex에 아래 문장을 붙여넣습니다.
 
 ```text
-이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 설계하기 > AI 업무 매뉴얼 만들기부터 순서대로 진행해줘:
+이 GitHub 링크에서 실습 자료를 받아서 설치하고, README를 읽은 뒤 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘:
 
 [GitHub 링크]
 ```
@@ -53,7 +54,8 @@ claude --version
 6. 아래 문장을 입력합니다.
 
 ```text
-이 폴더의 README를 읽고, 설계하기 > AI 업무 매뉴얼 만들기부터 순서대로 진행해줘.
+이 폴더의 README를 읽고, 설계하기 > 내 업무 Skill로 시작하기부터 진행해줘.
+샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
 ```
 
 ## 터미널 사용 가능자용
@@ -69,7 +71,8 @@ python3 -m http.server 18790
 그다음 Claude Code 또는 Codex에서 다음을 입력합니다.
 
 ```text
-이 저장소의 README.md와 practice/START_HERE.md를 읽고, 설계하기 > AI 업무 매뉴얼 만들기부터 실습을 진행해줘.
+이 저장소의 README.md와 practice/START_HERE.md를 읽고, 설계하기 > 내 업무 Skill로 시작하기부터 실습을 진행해줘.
+샘플보다 내 실제 반복 업무와 Google Sheet를 기준으로 진행하고, Clarify 질문을 하나씩 받으면서 구조화해줘.
 ```
 
 ## 수강생 실데이터 안내
@@ -97,4 +100,5 @@ claude mcp add workspace-mcp --scope user \
 ```
 
 설치 후 Google 계정 승인 화면이 뜨면 수업용 계정으로 승인합니다.
-그 다음 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 열어 실습합니다.
+그 다음 수강생의 실제 업무 Google Sheet를 기준으로 자료 연결을 확인합니다.
+자료가 없거나 계정 연결이 어려운 수강생만 `practice/sample-data/edu-ops-google-sheets-sample.xlsx`를 Google Drive에 업로드하고 Google Sheets로 열어 흐름을 확인합니다.

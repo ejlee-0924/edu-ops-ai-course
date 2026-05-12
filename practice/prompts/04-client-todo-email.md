@@ -1,10 +1,11 @@
 # 04. 기업별 할 일 정리와 메일 초안
 
 ```text
-Google Sheets MCP로 연결된 Edu Ops AI Course Sample 문서의
-syncup_notes, client_email_thread, cs_inquiries 탭을 읽고
+Google Sheets MCP로 연결된 내 실제 운영 업무 Google Sheet를 읽고
 기업별 할 일 목록과 고객사 첫 회신 메일 초안을 만들어줘.
 
+내 실제 자료가 없으면 Edu Ops AI Course Sample 문서의
+syncup_notes, client_email_thread, cs_inquiries 탭으로 흐름을 확인해줘.
 Google Sheets MCP 연결이 어렵다면 practice/sample-data 폴더의 Markdown 백업 파일을 사용해줘.
 
 결과물에는 다음을 포함해줘:

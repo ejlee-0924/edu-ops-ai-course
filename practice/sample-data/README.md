@@ -1,6 +1,6 @@
 # sample-data
 
-샘플 자료는 Google Sheets MCP 실습을 기준으로 준비합니다.
+샘플 자료는 실제 Google Sheet가 없거나 MCP 연결이 어려울 때 쓰는 백업 자료입니다.
 
 ## 기본 자료
 
@@ -23,5 +23,5 @@
 | `client_email_thread` | 고객사 메일 히스토리 |
 | `cs_inquiries` | CS 문의 기록 |
 
-실습에서는 위 탭을 Google Sheets MCP로 찾는 것을 기본 흐름으로 진행합니다.
-파일 기반 자료는 회사 보안, 계정, 네트워크 문제로 MCP 연결이 어려울 때만 사용합니다.
+실습의 기본 흐름은 수강생의 실제 Google Sheet를 Google Sheets MCP로 찾는 것입니다.
+위 탭과 파일 기반 자료는 회사 보안, 계정, 네트워크 문제로 실제 자료 연결이 어려울 때만 사용합니다.

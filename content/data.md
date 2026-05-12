@@ -1,13 +1,25 @@
-# 샘플 Google Sheet 사용법
+# 내 Google Sheet 준비하기
 
-처음에는 Google Sheets 샘플 워크북으로 진행합니다.
-흐름을 익힌 뒤 내 실제 Google Sheets 또는 export 파일로 바꿉니다.
+기본은 수강생이 실제로 쓰는 Google Sheet입니다.
+샘플 워크북은 자료가 없거나 회사 계정 연결이 어려울 때만 사용합니다.
 
-## 기본 샘플 자료
+## 내 자료를 먼저 준비하기
+
+가능하면 아래 중 하나를 준비합니다.
+
+- 실제 만족도 조사 결과 Google Sheet
+- 고객사별 운영 현황 Sheet
+- 교육 신청자/수강생 안내 Sheet
+- CS 문의 정리 Sheet
+- 주간 운영 리포트 Sheet
+
+민감정보가 있으면 이름, 이메일, 전화번호, 고객사 내부 사정은 먼저 익명화합니다.
+
+## 백업용 샘플 자료
 
 | 자료 | 내용 |
 |---|---|
-| `practice/sample-data/edu-ops-google-sheets-sample.xlsx` | Google Sheets MCP 실습용 샘플 워크북 |
+| `practice/sample-data/edu-ops-google-sheets-sample.xlsx` | 실제 자료가 없을 때 쓰는 샘플 워크북 |
 
 Google Drive에 업로드한 뒤 Google Sheets로 열면 아래 탭을 사용합니다.
 
@@ -29,7 +41,7 @@ Google Sheets MCP 연결이 안 될 때만 아래 파일을 사용합니다.
 | `practice/sample-data/client-email-thread.md` | 고객사 메일 히스토리 백업 |
 | `practice/sample-data/cs-inquiries.md` | CS 문의 기록 백업 |
 
-## 내 자료를 쓸 때
+## export 파일을 쓸 때
 
 실제 업무 자료는 가능하면 Google Sheets MCP로 연결합니다.
 연결이 어렵거나 민감정보 검토가 필요하면 `practice/private-data/`에 export 파일을 넣습니다.
@@ -43,5 +55,5 @@ Google Sheets MCP 연결이 안 될 때만 아래 파일을 사용합니다.
 
 ## 추천 진행 방식
 
-첫 실습은 샘플 Google Sheet로 끝까지 진행하세요.
-그 다음 내 실제 시트 하나만 바꿔 연결해 같은 흐름을 반복합니다.
+첫 실습은 내 실제 Google Sheet로 진행하세요.
+자료가 준비되지 않은 수강생만 샘플 Google Sheet로 흐름을 확인합니다.
